@@ -1,0 +1,107 @@
+:root {
+    --text-color: #000000;
+    --background-color: #A0AECD;
+    --main-font: 'Anton', sans-serif;
+  }
+/*
+main-tag-----------------------------------------
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--main-font);
+}
+button{
+    font-family: var(--main-font);
+    background: none;
+    border: none;
+    color: var(--text-color);
+}
+button:hover{
+    cursor: pointer;
+}
+a{
+    font-family: var(--main-font);
+    text-decoration: none;
+    color: var(--text-color);
+}
+.container{
+    margin: 1% 5%;
+}
+/*
+header-----------------------------------------
+*/
+.header{
+    height: 90vh;
+}
+/*
+nav-bar-----------------------------------------
+*/
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*
+LOGO-----------------------------------------
+*/
+
+.logo{
+    font-size: 40px;
+}
+.logo span{
+    font-size: 20px;
+    transition: all .3s ease;
+}
+
+
+/*
+contact btn-----------------------------------------
+*/
+
+#contact{
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: all .3s ease;
+}
+#contact:hover{
+    transform: scale(1.2);
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+/*
+contact btn-----------------------------------------
+*/
+
+.about-me{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+.about-me img{
+    height: 400px;
+    position: relative;
+    z-index: 2;
+}
+.about-me img::after{
+    content: ' ';
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: var(--text-color);
+}
+.about-me p{
+    max-width: 600px;
+}
+#about-btn{
+    font-size: 1.2rem;
+}
