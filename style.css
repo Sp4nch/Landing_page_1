@@ -1,107 +1,222 @@
-:root {
-    --text-color: #000000;
-    --background-color: #A0AECD;
-    --main-font: 'Anton', sans-serif;
-  }
-/*
-main-tag-----------------------------------------
-*/
-
 body{
     margin: 0;
     padding: 0;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    font-family: var(--main-font);
-}
-button{
-    font-family: var(--main-font);
-    background: none;
-    border: none;
-    color: var(--text-color);
-}
-button:hover{
-    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
 }
 a{
-    font-family: var(--main-font);
     text-decoration: none;
-    color: var(--text-color);
+    color: black;
 }
 .container{
-    margin: 1% 5%;
+    padding: 50px 200px;
 }
-/*
-header-----------------------------------------
-*/
 .header{
-    height: 90vh;
-}
-/*
-nav-bar-----------------------------------------
-*/
-.nav-bar{
     display: flex;
-    align-items: center;
+    width: 100%;
     justify-content: space-between;
 }
-
-/*
-LOGO-----------------------------------------
-*/
-
-.logo{
-    font-size: 40px;
-}
-.logo span{
-    font-size: 20px;
-    transition: all .3s ease;
-}
-
-
-/*
-contact btn-----------------------------------------
-*/
-
-#contact{
-    border: 2px solid var(--text-color);
-    border-radius: 10px;
-    font-size: 20px;
-    padding: 10px 20px;
-    transition: all .3s ease;
-}
-#contact:hover{
-    transform: scale(1.2);
-    background-color: var(--text-color);
-    color: var(--background-color);
-}
-
-/*
-contact btn-----------------------------------------
-*/
-
-.about-me{
-    margin-top: 100px;
+.header *{
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: right;
+    justify-content: flex-start;
 }
-.about-me img{
-    height: 400px;
+.logo{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 128%; /* 19.2px */
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+}
+.nav-link{
+    padding: 0 50px;
+}
+
+.gretting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section {
+    margin: 120px 0;
+}
+.gretting-text{
+    max-width: 364px;
+}
+.gretting-text h1 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 128%; /* 64px */
+}
+.gretting-text h2{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 143%; /* 20.02px */
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+.text-about{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 143%; /* 22.88px */
+    margin: 20px 0px;
+}
+
+.contact-btn{
+    margin-top: 20px;
+}
+.btn{
+    border: 1px solid black;
+    background: none;
+    padding: 20px 50px;
+    border-radius: 2px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 143%; /* 22.88px */
+}
+
+.img-bl-gr{
     position: relative;
-    z-index: 2;
 }
-.about-me img::after{
+.immmg1{
+    position: absolute;
+    top: 201px;
+    left: -400px;
+}
+
+
+.service h2{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 128%; /* 44.8px */
+}
+.service h3{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 128%; /* 32px */
+}
+.fields-btn{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.fields-btn button{
+    display: flex;
+    flex-grow: 1;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 143%; /* 25.74px */
+    transition: all .3s ease;
+    align-items: center;
+    justify-content: center;
+    height: 98px;
+    border: none;
+    background-color: #F6F6F6;
+    margin-top: 30px;
+    border-radius: 2px;
+    min-width: 220px;
+}
+.fields-btn button:hover{
+    background-color: #121212;
+    color: #F6F6F6;
+}
+.fields-btn button:nth-child(2){
+    margin: 30px;
+}
+.steps{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.steps::before{
+    position: absolute;
     content: ' ';
-    z-index: 1;
-    height: 100%;
     width: 100%;
-    background-color: var(--text-color);
+    height: 1px;
+    background-color: #000;
+    top: 23px;
+    z-index: -1;
 }
-.about-me p{
-    max-width: 600px;
+.step{
+    max-width: 260px;
 }
-#about-btn{
-    font-size: 1.2rem;
+.step button{
+    width: 47px;
+    height: 47px;
+    border-radius: 100px;
+    border: 1px solid #000;
+    background: #FFF;
+}
+
+.contact{
+    border-radius: 2px;
+    background: #ECF9F8;
+}
+.contact-container{
+    padding: 80px 100px;
+}
+.contact-and-about{
+    display: flex;
+    justify-content: space-between;
+}
+.con{
+    margin: 50px 0px;
+}
+.img-con{
+    display: flex;
+}
+.con h3{
+    font-size: 14px;
+}
+.con p{
+    font-size: 16px;
+}
+.about{
+    margin: 50px;
+    max-width: 277px;
+}
+.about h3{
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 128%; /* 32px */
+}
+.img-me{
+    height: 367px;
+    width: 300px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
