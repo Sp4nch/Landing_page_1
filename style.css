@@ -31,7 +31,11 @@ a{
     text-transform: uppercase;
 }
 .nav-link{
+    font-size: 14px;
     padding: 0 50px;
+}
+.nav-location p{
+    font-size: 14px;
 }
 
 .gretting{
@@ -89,14 +93,25 @@ a{
     font-weight: 500;
     line-height: 143%; /* 22.88px */
 }
-
+.img-bl-gr img{
+    user-select: none;
+    transition: all .3s ease;
+}
+    
 .img-bl-gr{
     position: relative;
 }
-.immmg1{
+
+.img-gr-as{
     position: absolute;
-    top: 201px;
-    left: -400px;
+}
+.as-1{
+    top: -100px;
+    right: -140px;
+}
+.as-2{
+    bottom: -100px;
+    left: -140px;
 }
 
 
@@ -119,7 +134,6 @@ a{
 .fields-btn{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .fields-btn button{
@@ -219,4 +233,104 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+@media  (max-width: 1440px) {
+    .service h2{
+        display: flex;
+        font-size: 30px;
+        justify-content: center;
+    }
+    .fields-btn{
+        display: flex;
+        justify-content: center;
+    }
+    .img-bl-gr img{
+        height: 245px;
+    }
+    .as-1{
+        right: -120px;
+    }
+    .as-2{
+        left: -120px;
+    }
+}
+@media  (max-width: 1180px) {
+    .gretting-text h1{
+        font-size: 40px;
+    }
+    .text-about{
+        font-size: 13px;
+        max-width: 300px;
+    }
+    .img-bl-gr img{
+        height: 200px;
+    }
+    .as-1{
+        top: -100px;
+        right: -90px;
+    }
+    .as-2{
+        bottom: -100px;
+        left: -90px;
+    }
+    .steps::before{
+        position: absolute;
+        content: ' ';
+        width: 90%;
+        height: 1px;
+        background-color: #000;
+        top: 23px;
+        z-index: -1;
+    }
+    .step{
+        margin-right: 20px;
+    }
+    .step p{
+        font-size: 13px;
+    }
+    
+}
+
+@media  (max-width: 1338px){
+    .contact-and-about{
+        display: block;
+    }
+    .contacts{
+        display: flex;
+        justify-content: space-between;
+    }
+    .about{
+        width: 100%;
+        margin: 0;
+    }
+    .about p{
+        width: 50vw;
+    }
+    .img-bl-ab{
+        height: 400px;
+        overflow: hidden;
+        align-items: center;
+        position: relative;
+    }
+    .img-me{
+        position: absolute;
+        top: -200px;
+        min-width: 50vw;
+        min-height: 100vh;
+    }
+}
+@media  (max-width: 995px) {
+    .container{
+        padding: 50px 135px;
+    }
+    .fields-btn{
+        display: block;
+    }
+    .fields-btn button{
+        width: 100%;
+    }
+    .fields-btn button:nth-child(2){
+        margin: 0px;
+    }
 }
